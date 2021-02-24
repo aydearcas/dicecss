@@ -18,9 +18,25 @@ function clearDots () {
   }
 }
 
+function addHistory () {
+/* Función que genera el historial de tiradas cogiendo el innerHTML de History y añadiendo un <p>
+  con la última tirada que se realizó. Necesita saber cuál es el número random que se generó.
+  Eso puede hacerse contando los dots que hay
+*/
+  const dots = document.querySelectorAll('.dot')
+  const historyList = document.querySelector('.history')
+  historyList.innerHTML = `${historyList.innerHTML}<p class ="history-roll">${dots.length}</p>`
+}
+function updateScroll () {
+  const historial = document.querySelector('.history')
+  historial.scrollTop = historial.scrollHeight
+}
+
 function newRoll () {
   clearDots()
   rollDice()
+  addHistory()
+  updateScroll()
 }
 
 const rollButton = document.getElementById('rollButton')
