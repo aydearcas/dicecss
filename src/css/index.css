@@ -1,0 +1,123 @@
+.dice {
+  width: 1000px;
+  height: 400px;
+  background: green;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: auto;
+}
+
+#rollButton {
+  margin: auto;
+  width: 80px;
+  height: 40px;
+  font-size: 24px;
+}
+
+#face {
+  width: 300px;
+  height: 300px;
+  background: #f3f3f3;
+  margin: auto;
+  border: 5px solid black;
+  border-radius: 15px;
+  display: grid;
+  grid-template-areas:
+    "a b c"
+    "d e f"
+    "g h i";
+}
+
+.dot {
+  width: 70px;
+  height: 70px;
+  background: black;
+  border-radius: 60px;
+  align-self: center;
+  justify-self: center;
+}
+
+.face1 div:nth-child(1) {
+  grid-area: e;
+}
+
+.face2 div:nth-child(1) {
+  grid-area: c;
+}
+
+.face2 div:nth-child(2) {
+  grid-area: g;
+}
+
+.face3 div:nth-child(1) {
+  grid-area: c;
+}
+
+.face3 div:nth-child(2) {
+  grid-area: e;
+}
+
+.face3 div:nth-child(3) {
+  grid-area: g;
+}
+
+.face4 div:nth-child(1) {
+  grid-area: a;
+}
+
+.face4 div:nth-child(2) {
+  grid-area: c;
+}
+
+.face4 div:nth-child(3) {
+  grid-area: g;
+}
+
+.face4 div:nth-child(4) {
+  grid-area: i;
+}
+
+.face5 div:nth-child(1) {
+  grid-area: a;
+}
+
+.face5 div:nth-child(2) {
+  grid-area: c;
+}
+
+.face5 div:nth-child(3) {
+  grid-area: e;
+}
+
+.face5 div:nth-child(4) {
+  grid-area: g;
+}
+
+.face5 div:nth-child(5) {
+  grid-area: i;
+}
+
+.face6 div:nth-child(1) {
+  grid-area: a;
+}
+
+.face6 div:nth-child(2) {
+  grid-area: c;
+}
+
+.face6 div:nth-child(3) {
+  grid-area: d;
+}
+
+.face6 div:nth-child(4) {
+  grid-area: f;
+}
+
+.face6 div:nth-child(5) {
+  grid-area: g;
+}
+
+.face6 div:nth-child(6) {
+  grid-area: i;
+}
