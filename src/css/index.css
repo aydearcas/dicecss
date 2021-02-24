@@ -18,7 +18,11 @@
 #face {
   width: 300px;
   height: 300px;
-  background: #f3f3f3;
+  background-image: radial-gradient(#fff, #666 250%);
+
+  /*
+  background: linear-gradient(to top left, #666, #f1f1f1 5%, #f7f7f7 60%, #fefefe 90%);
+  */
   margin: auto;
   border: 5px solid black;
   border-radius: 15px;
@@ -32,7 +36,7 @@
 .dot {
   width: 70px;
   height: 70px;
-  background: black;
+  background-image: radial-gradient(#ccc, #555 10%, #333 20%, #111 40%, #000);
   border-radius: 60px;
   align-self: center;
   justify-self: center;
